@@ -39,9 +39,9 @@
           <path class="journey-path" d="M170 335c48-82 109-116 183-111 26 2 48 12 71 30" fill="none" stroke="#ffd5a8" stroke-width="5" stroke-linecap="round" stroke-dasharray="8 12"/>
           <circle cx="170" cy="335" r="9" fill="#ff8c55" stroke="#fff7ea" stroke-width="5"/><circle cx="424" cy="254" r="9" fill="#ff8c55" stroke="#fff7ea" stroke-width="5"/>
         </svg>
-        <figure class="photo-card main-photo"><img src="assets/hero-memory.webp" alt="A traveler revisiting a coastal memory at sunset"><figcaption><span>Big Sur</span><small>September 2026</small></figcaption></figure>
-        <figure class="photo-card mini-photo"><div class="mini-sky" aria-hidden="true"></div><figcaption><span>The road there</span><small>5:42 PM</small></figcaption></figure>
-        <div class="place-pill"><span class="pin-dot"></span> 3 places · 28 memories</div>
+        <figure class="photo-card main-photo"><img src="assets/oyomap-autoplay-poster.webp" alt="Oyomap map story for Rottnest Island"><figcaption><span>Rottnest Island</span><small>September 2026</small></figcaption></figure>
+        <div class="app-badge"><span class="app-icon" aria-hidden="true"></span><span>Made in Oyomap</span></div>
+        <div class="place-pill"><span class="pin-dot"></span> 1 place · one living story</div>
       </div>
     </section>
 
@@ -56,13 +56,15 @@
       </div>
     </section>
 
-    <section class="film-section">
+    <section class="film-section" aria-labelledby="film-heading">
       <div class="film-frame">
-        <div class="film-map"><span class="route-line"></span><span class="map-label one">SEATTLE</span><span class="map-label two">VANCOUVER</span><span class="map-label three">TOFINO</span></div>
-        <div class="film-memory"><img src="assets/hero-memory.webp" alt="Coastal travel memory"><div class="film-caption">A quiet road, just before sunset.</div></div>
-        <div class="play-button" aria-hidden="true">▶</div>
+        <video class="product-film" autoplay muted loop playsinline controls preload="metadata" poster="assets/oyomap-autoplay-poster.webp" aria-label="Oyomap autoplay map story for Rottnest Island">
+          <source src="assets/oyomap-autoplay.mp4" type="video/mp4">
+          Your browser does not support embedded video.
+        </video>
+        <p class="film-note">Real Oyomap export · tap for sound</p>
       </div>
-      <div class="film-copy"><p class="section-kicker">Cinematic by nature</p><h2>Travel through the memory, not a slideshow.</h2><p>Maps give every photo a sense of arrival. Oyomap moves between real places, then lets each moment breathe.</p><ul><li>Photos, video, and Live Photos</li><li>Portrait story export</li><li>Map Story cards to keep or share</li></ul></div>
+      <div class="film-copy"><p class="section-kicker">Cinematic by nature</p><h2 id="film-heading">Travel through the memory, not a slideshow.</h2><p>Maps give every photo a sense of arrival. Oyomap moves between real places, then lets each moment breathe.</p><ul><li>Photos, video, and Live Photos</li><li>Portrait story export</li><li>Map Story cards to keep or share</li></ul></div>
     </section>
 
     <section class="people-section" id="people">
@@ -81,5 +83,6 @@
   </main>
 
   <footer class="site-footer"><a class="brand small" href="./"><span class="brand-mark"></span><span>Oyomap</span></a><p>See, preserve, and appreciate the life you are already living.</p><nav class="footer-links" aria-label="Footer navigation"><a href="privacy/">Privacy</a><a href="support/">Support</a><a href="terms/">Terms</a></nav><span>© 2026 Oyomap</span></footer>
+  <script>if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){document.querySelectorAll('video[autoplay]').forEach(function(video){video.removeAttribute('autoplay');video.pause()})}</script>
 </body>
 </html>
