@@ -1,62 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy, support, and terms for the Oyomap iOS app.">
-  <title>Oyomap — Legal &amp; Support</title>
+  <meta name="description" content="Turn your photos into map stories. Revisit the places, moments, and people you choose with Oyomap for iPhone.">
+  <meta name="theme-color" content="#fff9f2">
+  <title>Oyomap — A little closer to that day</title>
   <link rel="canonical" href="https://www.oyomap.com/">
   <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/home.css">
+  <script src="assets/home.js" defer></script>
 </head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="./" aria-label="Oyomap legal and support home">
-      <span class="brand-mark" aria-hidden="true"></span>
-      <span>Oyomap</span>
-    </a>
-    <nav class="site-nav" aria-label="Legal navigation">
-      <a href="privacy/">Privacy</a>
-      <a href="support/">Support</a>
-      <a href="terms/">Terms</a>
-    </nav>
+<body class="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="web-header page-width">
+    <a class="brand" href="./" aria-label="Oyomap home"><span class="brand-mark" aria-hidden="true"></span><span>Oyomap</span></a>
+    <nav aria-label="Primary navigation"><a href="#explore">Explore</a><a href="support/">Support</a></nav>
+    <a class="launch-link" href="#launch">Coming to iPhone</a>
   </header>
-
-  <main>
-    <section class="hero">
-      <p class="eyebrow">Legal &amp; Support</p>
-      <h1>Your memories belong to you.</h1>
-      <p class="lead">Oyomap helps you turn trips into private, cinematic memories. Here is the clear version of how the app handles data, where to get help, and the terms that apply.</p>
+  <main id="main">
+    <section class="hero page-width" aria-labelledby="hero-title">
+      <div class="hero-intro">
+        <p class="eyebrow">Your photos. Your places.</p>
+        <h1 id="hero-title">A little closer<br>to that day.</h1>
+        <p class="hero-description">Turn the photos you already have into map stories, with the moments and people you choose.</p>
+        <a class="primary-action" href="#demo">Watch the demo <span aria-hidden="true">↗</span></a>
+        <p class="hero-note">Made for iPhone · No account needed</p>
+      </div>
+      <figure class="demo" id="demo">
+        <div class="video-shell">
+          <video id="product-film" controls playsinline preload="none" poster="assets/oyomap-autoplay-poster.webp" aria-label="Play the 47-second Oyomap map story demo" aria-describedby="demo-caption">
+            <source src="assets/oyomap-autoplay.mp4" type="video/mp4">
+            <a href="assets/oyomap-autoplay.mp4">Open the demo video</a>.
+          </video>
+        </div>
+        <figcaption id="demo-caption">An actual Oyomap export · 47 seconds</figcaption>
+        <p class="video-status" role="status" hidden></p>
+        <a class="video-fallback" href="assets/oyomap-autoplay.mp4">Open video directly</a>
+      </figure>
     </section>
-
-    <section class="cards" aria-label="Legal and support pages">
-      <article class="card">
-        <span class="icon" aria-hidden="true">01</span>
-        <h2>Privacy</h2>
-        <p>What stays on your device, what limited diagnostics are collected, and the choices you have.</p>
-        <a href="privacy/">Read the privacy policy →</a>
-      </article>
-      <article class="card">
-        <span class="icon" aria-hidden="true">02</span>
-        <h2>Support</h2>
-        <p>Answers for photo access, purchases, data deletion, and ways to contact Oyomap.</p>
-        <a href="support/">Get support →</a>
-      </article>
-      <article class="card">
-        <span class="icon" aria-hidden="true">03</span>
-        <h2>Terms</h2>
-        <p>The Apple Standard EULA and the supplemental terms for using Oyomap and Oyo Pro.</p>
-        <a href="terms/">Read the terms →</a>
-      </article>
+    <section class="explore page-width" id="explore" aria-labelledby="explore-title">
+      <div class="section-heading"><h2 id="explore-title">Three ways back.</h2><p>Pick a card to see how it works.</p></div>
+      <div class="feature-grid">
+        <details class="feature" id="places">
+          <summary><span class="feature-image"><img src="assets/friend-map-card.jpeg" alt="Oyomap export card showing Nick and Nina’s mapped places" width="864" height="1536" loading="lazy"></span><span class="feature-copy"><span class="feature-label">Places</span><span class="feature-title">Where it happened.</span><span class="feature-teaser">Your photos, back on the map.</span><span class="feature-action"><span class="when-closed">See how</span><span class="when-open">Close details</span><span class="plus" aria-hidden="true">+</span></span></span></summary>
+          <div class="feature-detail"><h3>Make a map story</h3><ol><li>Choose photos from your camera roll.</li><li>Revisit the places in a moving map story.</li><li>Export a film or a map card to keep or share.</li></ol><a href="assets/friend-map-card.jpeg">View the full map card <span aria-hidden="true">↗</span></a></div>
+        </details>
+        <details class="feature" id="moments">
+          <summary><span class="feature-image"><img src="assets/trip-moments.jpeg" alt="Hiking Group Trip editor with people and photos arranged by day" width="709" height="1536" loading="lazy"></span><span class="feature-copy"><span class="feature-label">Time</span><span class="feature-title">The little details.</span><span class="feature-teaser">A day, a photo, a few words.</span><span class="feature-action"><span class="when-closed">See how</span><span class="when-open">Close details</span><span class="plus" aria-hidden="true">+</span></span></span></summary>
+          <div class="feature-detail"><h3>Keep the moments that matter</h3><ol><li>Open your trip and browse its days.</li><li>Tap a photo to add your own words.</li><li>Choose which moments appear in your film.</li></ol><a href="assets/trip-moments.jpeg">View the trip editor <span aria-hidden="true">↗</span></a></div>
+        </details>
+        <details class="feature" id="people">
+          <summary><span class="feature-image"><img src="assets/friend-passport.jpeg" alt="Nina’s travel passport showing one trip together and a hiking trip" width="709" height="1536" loading="lazy"></span><span class="feature-copy"><span class="feature-label">People</span><span class="feature-title">Who was there.</span><span class="feature-teaser">Shared trips, seen together.</span><span class="feature-action"><span class="when-closed">See how</span><span class="when-open">Close details</span><span class="plus" aria-hidden="true">+</span></span></span></summary>
+          <div class="feature-detail"><h3>Revisit with a friend</h3><ol><li>Open a person in Friends.</li><li>Browse the trips you shared in their passport.</li><li>Tap Play film to revisit those memories.</li></ol><a href="assets/friend-film.jpeg">View the Friend Film screen <span aria-hidden="true">↗</span></a><img class="detail-screen" src="assets/friend-film.jpeg" alt="Nick + Nina Friend Film preview with Theme and Play controls" width="709" height="1536" loading="lazy"></div>
+        </details>
+      </div>
     </section>
+    <aside class="privacy-strip page-width" id="privacy" aria-label="Privacy"><p><strong>Your memories stay yours.</strong> Photo organization and face analysis happen on your device.</p><a href="privacy/">Privacy details <span aria-hidden="true">↗</span></a></aside>
+    <section class="launch page-width" id="launch" aria-labelledby="launch-title"><div><h2 id="launch-title">Your next trip down memory lane.</h2><p>Oyomap for iPhone is preparing for launch.</p></div><span class="launch-status">Coming soon on the App Store</span></section>
   </main>
-
-  <footer class="site-footer">
-    <span>© 2026 Oyomap. Made for remembering well.</span>
-    <nav class="footer-links" aria-label="Footer navigation">
-      <a href="privacy/">Privacy</a>
-      <a href="support/">Support</a>
-      <a href="terms/">Terms</a>
-    </nav>
-  </footer>
+  <footer class="web-footer page-width"><span>© 2026 Oyomap</span><nav aria-label="Footer navigation"><a href="privacy/">Privacy</a><a href="terms/">Terms</a><a href="support/">Support</a></nav></footer>
 </body>
 </html>
