@@ -6,6 +6,10 @@
   <meta name="description" content="Oyomap privacy policy.">
   <title>Privacy Policy — Oyomap</title>
   <link rel="canonical" href="https://www.oyomap.com/privacy/">
+  <link rel="alternate" hreflang="en" href="https://www.oyomap.com/privacy/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://www.oyomap.com/privacy/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://www.oyomap.com/privacy/zh-Hant/">
+  <link rel="alternate" hreflang="x-default" href="https://www.oyomap.com/privacy/">
   <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
@@ -22,16 +26,21 @@
   </header>
 
   <main class="legal-page">
+    <nav class="language-nav" aria-label="Policy language">
+      <a href="./" lang="en" hreflang="en" aria-current="page">English</a>
+      <a href="./zh-Hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+      <a href="./zh-Hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+    </nav>
     <section class="hero">
       <p class="eyebrow">Privacy Policy</p>
       <h1>Private by design, clear by default.</h1>
       <p class="lead">Your photos, videos, stories, precise locations, and face-analysis results are processed on your device. Oyomap does not upload that content to its own servers.</p>
-      <p class="meta">Effective August 8, 2026</p>
+      <p class="meta">Effective October 1, 2026</p>
     </section>
 
     <article class="legal-body">
       <div class="callout">
-        <p><strong>The short version:</strong> Oyomap is local-first. We do not sell personal information, use cross-app tracking, or use your memories for advertising. We use limited Firebase analytics and crash diagnostics to understand app usage and stability.</p>
+        <p><strong>The short version:</strong> Oyomap is local-first. We do not sell personal information, use cross-app tracking, or use your memories for advertising. Optional Firebase usage analytics starts only after you explicitly agree to share analytics. Limited crash diagnostics run separately to help keep the app reliable.</p>
       </div>
 
       <h2>1. Scope</h2>
@@ -57,12 +66,12 @@
           <tr>
             <td data-label="Service">Firebase Analytics</td>
             <td data-label="Information">App screens and feature actions, engagement, app/device/OS details, installation identifiers, and service-derived coarse region signals. We do not include photo IDs, names, captions, precise coordinates, face data, or search text in events.</td>
-            <td data-label="Purpose">Understand aggregate feature use and improve the app.</td>
+            <td data-label="Purpose">Understand aggregate feature use and improve the app. Collection is off by default and starts only after you explicitly agree to share analytics. You can turn it off later in Oyomap Settings.</td>
           </tr>
           <tr>
             <td data-label="Service">Firebase Crashlytics</td>
             <td data-label="Information">Crash stack traces, app/device/OS details, and allow-listed categorical diagnostics. We intentionally exclude user content and raw error payloads.</td>
-            <td data-label="Purpose">Diagnose crashes and reliability problems.</td>
+            <td data-label="Purpose">Diagnose crashes and reliability problems. Crash reporting is enabled separately and is not controlled by the optional usage-analytics setting.</td>
           </tr>
           <tr>
             <td data-label="Service">Firebase Remote Config</td>
@@ -81,13 +90,13 @@
           </tr>
         </tbody>
       </table>
-      <p>Analytics and crash reporting are enabled in the current release. Firebase's automatic screen inference, advertising personalization signals, and Google Ads on-device conversion event data are disabled.</p>
+      <p>Declining optional usage analytics does not affect app functionality. You can withdraw consent at any time by turning off Share Usage Analytics in Oyomap Settings. This stops future optional analytics collection and resets local analytics data; it does not automatically delete data already sent to Firebase. Firebase's automatic screen inference, advertising personalization signals, and Google Ads on-device conversion event data are disabled. Advertising consent remains denied.</p>
 
       <h2>4. How we use information</h2>
       <p>We use information only to provide and improve Oyomap, maintain security and reliability, process purchases through Apple, answer support requests, comply with law, and protect our users and rights.</p>
 
       <h2>5. When information is shared</h2>
-      <p>We share limited information with service providers only as needed to operate Oyomap: Google Firebase for analytics, crash reporting, and configuration; Apple for Photos, maps, geocoding, and purchases; and Asana if you choose to submit a hosted feedback form. Their processing is governed by their own terms and privacy policies.</p>
+      <p>We share limited information with service providers only as needed to operate Oyomap: Google Firebase for optional analytics, crash reporting, and configuration; Apple for Photos, maps, geocoding, and purchases; and Asana if you choose to submit a hosted feedback form. Their processing is governed by their own terms and privacy policies.</p>
       <p>We may also disclose information if legally required or necessary to protect users, Oyomap, or others. We do not sell personal information, share it for cross-context behavioral advertising, or use third-party advertising SDKs.</p>
 
       <h2>6. Retention</h2>
@@ -100,6 +109,7 @@
 
       <h2>7. Your choices and rights</h2>
       <ul>
+        <li>Choose whether to share optional usage analytics, and change your choice at any time using Share Usage Analytics in Oyomap Settings. Crash reporting is handled separately.</li>
         <li>Use iOS Settings to grant full, limited, or no Photos access and to change that choice later.</li>
         <li>Delete stories and friend profiles in the app, or uninstall Oyomap to remove its local app container.</li>
         <li>Manage or cancel subscriptions through your Apple Account's subscription settings.</li>

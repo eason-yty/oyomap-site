@@ -13,6 +13,8 @@ including Git history, is public.
 |---|---|
 | `/` | Public landing page; may evolve into the main Oyomap product introduction |
 | `/privacy/` | Privacy Policy URL for the app and App Store Connect |
+| `/privacy/zh-Hans/` | Simplified Chinese Privacy Policy |
+| `/privacy/zh-Hant/` | Traditional Chinese Privacy Policy |
 | `/support/` | Support URL for the app and App Store Connect |
 | `/terms/` | Apple Standard EULA link plus Oyomap supplemental terms |
 
@@ -27,7 +29,11 @@ oyomap-site/
 ├── assets/
 │   └── styles.css     # Shared site styles
 ├── privacy/
-│   └── index.html     # /privacy/
+│   ├── index.html     # /privacy/ (English)
+│   ├── zh-Hans/
+│   │   └── index.html # /privacy/zh-Hans/
+│   └── zh-Hant/
+│       └── index.html # /privacy/zh-Hant/
 ├── support/
 │   └── index.html     # /support/
 ├── terms/
@@ -102,3 +108,17 @@ providers, account/cloud behavior, advertising, or subscription behavior
 materially changes. Before every release, reconcile the app,
 `PrivacyInfo.xcprivacy`, Firebase settings, App Store Connect answers, and these
 public pages.
+
+Maintain the English, Simplified Chinese, and Traditional Chinese privacy
+policies together: the same provisions, service providers, and effective date
+must appear in all three. Each page includes visible language links, its own
+canonical URL, and the same `hreflang` alternate links. Keep `/privacy/` as the
+stable English entry point for existing app and App Store links; the language
+selector uses ordinary links without JavaScript, cookies, or redirects. Support
+and Terms currently remain English.
+
+The policies distinguish optional Firebase usage analytics (off by default,
+enabled only by explicit consent, withdrawable in Oyomap Settings) from separate
+crash reporting. Turning off usage analytics stops future optional collection
+and resets local analytics data; it does not automatically delete previously
+sent data. Keep these descriptions aligned with the shipping app.

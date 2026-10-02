@@ -103,6 +103,34 @@ a:focus-visible, summary:focus-visible {
 
 .site-nav a[aria-current="page"], .site-nav a:hover { color: var(--ink); }
 
+.language-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  font-size: 0.94rem;
+}
+
+.language-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+}
+
+.language-nav a[aria-current="page"] {
+  color: var(--ink);
+  border-color: var(--line);
+  background: var(--card);
+  font-weight: 700;
+}
+
+.legal-page:lang(zh) { line-height: 1.8; }
+.legal-page:lang(zh) h1, .legal-page:lang(zh) h2 { letter-spacing: 0; line-height: 1.4; }
+.legal-page:lang(zh) h1 .title-phrase { display: inline-block; white-space: nowrap; }
+.legal-page:lang(zh) .eyebrow { letter-spacing: 0.04em; }
+
 main {
   width: min(900px, calc(100% - 40px));
   margin: 44px auto 100px;
