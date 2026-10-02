@@ -16,6 +16,8 @@ including Git history, is public.
 | `/privacy/zh-Hans/` | Simplified Chinese Privacy Policy |
 | `/privacy/zh-Hant/` | Traditional Chinese Privacy Policy |
 | `/support/` | Support URL for the app and App Store Connect |
+| `/support/zh-Hans/` | Simplified Chinese Support |
+| `/support/zh-Hant/` | Traditional Chinese Support |
 | `/terms/` | Apple Standard EULA link plus Oyomap supplemental terms |
 
 ## Repository structure
@@ -35,7 +37,11 @@ oyomap-site/
 │   └── zh-Hant/
 │       └── index.html # /privacy/zh-Hant/
 ├── support/
-│   └── index.html     # /support/
+│   ├── index.html     # /support/ (English)
+│   ├── zh-Hans/
+│   │   └── index.html # /support/zh-Hans/
+│   └── zh-Hant/
+│       └── index.html # /support/zh-Hant/
 ├── terms/
 │   └── index.html     # /terms/
 ├── robots.txt
@@ -114,8 +120,14 @@ policies together: the same provisions, service providers, and effective date
 must appear in all three. Each page includes visible language links, its own
 canonical URL, and the same `hreflang` alternate links. Keep `/privacy/` as the
 stable English entry point for existing app and App Store links; the language
-selector uses ordinary links without JavaScript, cookies, or redirects. Support
-and Terms currently remain English.
+selector uses ordinary links without JavaScript, cookies, or redirects.
+
+Support also has English, Simplified Chinese, and Traditional Chinese versions
+with the same language selector and canonical/alternate metadata. Maintain the
+FAQ, contact links, and diagnostic privacy guidance in all three together.
+Chinese Privacy and Support pages link to each other in the same language.
+Keep `/support/` as the stable English entry point for existing app and App Store
+links. Terms currently remain English.
 
 The policies distinguish optional Firebase usage analytics (off by default,
 enabled only by explicit consent, withdrawable in Oyomap Settings) from separate
